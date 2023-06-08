@@ -1,0 +1,128 @@
+
+*,*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  padding: 20px 7%;
+  min-height: 100vh;
+  background: radial-gradient(circle, hsl(214, 61%, 85%), hsl(238, 69%, 76%));
+  gap: 15px;
+  padding-bottom: 80px;
+}
+.container .content {
+  flex: 1 1 400px;
+}
+.container .state {
+  font-size: 20px;
+  color: #666;
+  padding: 5px 0;
+  text-align: center;
+}
+.container .input {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 10px ;
+}
+.container .input input {
+  padding: 10px ;
+  width: 100%;
+  transition: .2s ease-out ;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.container .input button {
+  padding: 10px ;
+  gap: 4px;
+  font-size: 15px;
+  transition: .2s ease-out ;
+  text-decoration: none;
+}
+.container .image {
+  margin:  auto;
+  width: 15%;
+  
+}
+/* .container .image img {
+  width: 10%;
+} */
+
+.container .content .title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(64, 64, 247);
+}
+.container .content p {
+  color: #666;
+  padding: 5px 0;
+}
+.container .content .count-down {
+  display: flex;
+  padding: 10px 0;
+  gap: 15px ;
+}
+.container .content .count-down .box {
+  flex: 1 1 20px;
+  /* padding: 3px; */
+  text-align: center;
+  border: 1px solid #3333;
+  background: #fff;
+}
+.container .content .count-down .box h3 {
+   font-size: 50px;
+   color: #333;
+}
+.container .content .count-down .box span {
+  color: rgb(64, 64, 247);
+  font-size: 20px;
+}
+.container .content .btn {
+  display: inline-block;
+  padding: 8px 50px;
+  margin: 10px 0;
+  font-size: 17px;
+  background: rgb(38, 38, 240);
+  color: #fff;
+  transition: .2s ease-out ;
+  text-decoration: none;
+}
+.container .content .btn:hover {
+  letter-spacing: 2px;
+}
+
+@media (max-width:600px){
+  .container {
+      padding: 20px;
+  }
+  .container .content{
+      text-align: center;
+  }
+  .container .content .title{
+      font-size: 35px;
+  }
+  .container .content p {
+      font-size: 14px;
+  }
+  .container .content .count-down {
+      gap: 5px;
+  }
+  .container .content .count-down .box h3 {
+      font-size: 30px;
+  }
+  .container .content .count-down .box span {
+      font-size: 15px;
+  }
+}
